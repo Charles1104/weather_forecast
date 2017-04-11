@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+
+body {
+  background-image: url("http://cdn.weatheravenue.com/img/background/background.jpg");
+}
+
+h1 {
+  text-align: center;
+  border-color: rgb(245,245,38);
+  border-style: double;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.control_bar{
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.inputs{
+  margin-left: 2%;
+  margin-top: 0.5%;
+}
+
+#city{
+  height: 40px;
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#country{
+  height: 40px;
+  margin-left: 7px;
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#button{
+  width: 35%;
+  height: 60px;
+  margin-right: 2%;
+  margin-top: 1%;
+
+  color: #f15c5c;
+  background: #feee7d;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.div_day{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-style: solid;
+}
+
+.icon{
+  margin-right: 10%;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+ul{
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 70px;
+}
