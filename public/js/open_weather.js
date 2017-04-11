@@ -14,13 +14,13 @@ function onRequestData(url, listener){
 }
 
 button.addEventListener("click",function(){
+  display.innerHTML = "";
   onRequestData(`http://api.openweathermap.org/data/2.5/forecast?q=${city.value},${country.value}&appid=${API_KEY}`, getForecast);
 });
 
 
 function getForecast() {
   const requestData = JSON.parse(this.responseText);
-
   const city_country = document.createElement("h2");
   city_country.innerHTML = `${requestData.city.name} - ${requestData.city.country}`;
   city_country.className = "header";

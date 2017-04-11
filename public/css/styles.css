@@ -77,3 +77,10 @@ ul{
   display: inline-block;
   margin-left: 70px;
 }
+
+.header{
+  text-align: center;
+  font-size: 30px;
+  border: solid;
+  border-color: yellow;
+}
